@@ -1,0 +1,42 @@
+.login-form {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-form form {
+    width: 35rem;
+    background-color: #fff;
+    margin: 0 2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem #333;
+
+}
+
+.login-form form h1 {
+    font-size: 3rem;
+    color: #f39c12;
+    padding: 1rem 0;
+
+}
+
+.login-form form .box {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid #666;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.login-form form .box:focus {
+    border-color: #f39c12;
+}
