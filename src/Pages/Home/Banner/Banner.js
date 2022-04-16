@@ -15,8 +15,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3 className='banner-heading'>QURAN</h3>
-                    <p>At My RKK TUITION, students are taught the recitation of the Quraan with proper Tajweed rules step by step following the Saudi-Arabian Accent. Reciting Quran with tajweed gives 10 rewards for each letter recited. The reciter will be from the best of the people.</p>
+                    <h3>GET STARTED TODAY</h3>
+                    <p className='banner-heading'>Quran, Aqeedah & Arabic Tution</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3 className='banner-heading'>AQEEDAH</h3>
-                    <p>Illuminating the basic belief in Allah, His beautiful 99 names, discussing the matters which are known from the Quran and sound ahadeeth. On the whole, making clear what a Muslim must believe in his heart, by accepting the truth of Allah and His Messenger.</p>
+                    <h3>Learn Quran Online</h3>
+                    <p className='banner-heading'>Anytime & Anywhere</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption >
-                    <h3 className='banner-heading'>ARABIC</h3>
-                    <p>Learning Arabic can be a long and rigorous road. We as Muslim ummah are commanded to understand and reflect upon the Holy Quran. To do so, students at RKK TUITION are taught Arabic language at different levels depending on the age and their ability to learn.</p>
+                    <h3 className='banner-heading'>Admission</h3>
+                    <p>2022-2023 SCHOOL YEAR</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
