@@ -2,6 +2,8 @@
     background-color: #ffffff;
     border: 1px solid none;
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    padding: 30px 20px;
 }
 
 .service-container img {
@@ -9,22 +11,31 @@
     display: block;
 }
 
-.service-container h1,
-p,
-button {
+.service-container h1 {
     text-align: center;
+    color: #444;
+}
+
+.service-container p {
+    text-align: center;
+    color: #777;
 }
 
 .service-container button {
+
     margin: 0 auto;
     display: block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 25px;
     width: 200px;
     height: 50px;
     border: none;
-    color: #00887a;
-    background-color: #d3e3fc;
+    /* color: #00887a;
+    background-color: #d3e3fc; */
     border-radius: 4px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }

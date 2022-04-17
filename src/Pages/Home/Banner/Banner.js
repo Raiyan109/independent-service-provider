@@ -39,8 +39,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption >
-                    <h3 className='banner-heading'>Admission</h3>
-                    <p>2022-2023 SCHOOL YEAR</p>
+                    <h3 >Admission</h3>
+                    <p className='banner-heading'>2022-2023 SCHOOL YEAR</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

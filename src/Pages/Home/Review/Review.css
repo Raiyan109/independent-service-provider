@@ -1,0 +1,19 @@
+.review-container {
+    background-color: #ffffff;
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    padding: 30px 20px;
+}
+
+.service-container .description {
+    text-align: center;
+    color: #444;
+}
+
+.review-container .name {
+    text-align: center;
+    color: #777;
+    font-family: 'Inspiration', cursive;
+    font-size: 40px;
+}
