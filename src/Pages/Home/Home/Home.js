@@ -5,7 +5,8 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            <h1 className='text-primary'>RKK TUTION </h1>
+            <h1 className='main-heading'>RKK TUTION </h1>
+            <hr />
             <Banner></Banner>
             <Services></Services>
 

@@ -1,0 +1,21 @@
+.service-container {
+    background-color: #ffffff;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.service-container img {
+    margin: 0 auto;
+    display: block;
+}
+
+.service-container h1,
+p,
+button {
+    text-align: center;
+}
+
+.service-container button {
+    margin: 0 auto;
+    display: block;
+}

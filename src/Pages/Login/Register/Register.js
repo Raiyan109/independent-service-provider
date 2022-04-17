@@ -1,32 +1,42 @@
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init'
 import './Register.css'
 const Register = () => {
-    const emailRef = useRef('')
-    const passwordRef = useRef('')
-    const navigate = useNavigate()
-    const handleSubmit = event => {
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
 
-        const email = emailRef.current.value
-        const password = passwordRef.current.value
-        console.log(email, password)
-    }
-    const navigateLogin = event => {
+    const navigate = useNavigate()
+
+    const navigateLogin = () => {
         navigate('/login')
+    }
+
+    if (user) {
+        navigate('/home')
     }
 
     const handleRegister = event => {
         event.preventDefault()
-        console.log(event.target)
+        const name = event.target.name.value
+        const email = event.target.email.value
+        const password = event.target.password.value
+
+        createUserWithEmailAndPassword(email, password)
     }
     return (
         <div className='signup-form'>
             <Form onSubmit={handleRegister}>
                 <h1>Sign up </h1>
-                <input placeholder='Your Name' type="text" />
-                <input ref={emailRef} type="email" placeholder='Email' name="" id="" className='box' required />
-                <input ref={passwordRef} type="password" placeholder='Password' className='box' name="" id="" required />
+                <input placeholder='Your Name' name='name' type="text" />
+                <input type="email" placeholder='Email' name="email" id="" className='box' required />
+                <input type="password" placeholder='Password' className='box' name="password" id="" required />
                 <p>Forget Password? </p>
                 <p>Already have an account? <Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
                 <input type="submit" className='btn' value="Sign up" />

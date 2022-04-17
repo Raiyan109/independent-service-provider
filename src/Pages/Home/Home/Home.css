@@ -1,0 +1,13 @@
+.main-heading {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+
+    color: #ffffff;
+}
