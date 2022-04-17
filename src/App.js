@@ -9,6 +9,7 @@ import CheckOut from './Pages/CheckOut/CheckOut';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequiredAuth from './Pages/Login/RequiredAuth/RequiredAuth';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <CheckOut></CheckOut>
           </RequiredAuth>
         }></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
