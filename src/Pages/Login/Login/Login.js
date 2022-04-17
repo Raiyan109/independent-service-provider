@@ -3,6 +3,8 @@ import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+
+import Social from '../Social/Social';
 import './Login.css'
 const Login = () => {
     const emailRef = useRef('')
@@ -41,7 +43,11 @@ const Login = () => {
                 <p>Forget Password? </p>
                 <p>Don't have an account? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Please Signup</Link> </p>
                 <input type="submit" className='btn' value="Login" />
+
+
+                <Social></Social>
             </Form>
+
         </div>
     );
 };
