@@ -39,7 +39,7 @@ const Register = () => {
                 <input className='box' placeholder='Your Name' name='name' type="text" />
                 <input type="email" placeholder='Email' name="email" id="" className='box' required />
                 <input type="password" placeholder='Password' className='box' name="password" id="" required />
-                <p>Forget Password? </p>
+
                 <p>Already have an account? <Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
                 <input type="submit" className='btn' value="Sign up" />
                 <Social></Social>
