@@ -54,12 +54,13 @@ const Login = () => {
         <div className='login-form'>
 
             <Form onSubmit={handleSubmit}>
-                <h1>login </h1>
+                <h1>
+                    Login </h1>
                 <input ref={emailRef} type="email" placeholder='Email' name="" id="" className='box' required />
                 <input ref={passwordRef} type="password" placeholder='Password' className='box' name="" id="" required />
                 <p>Forget Password? <button className='btn btn-link' onClick={resetPassword}>Reset Password </button> </p>
                 <p>Don't have an account? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Please Signup</Link> </p>
-                <input type="submit" className='btn' value="Login" />
+                <input type="submit" className='login-btn' value="Login" />
 
 
                 <Social></Social>

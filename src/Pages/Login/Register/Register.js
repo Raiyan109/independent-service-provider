@@ -36,7 +36,7 @@ const Register = () => {
         <div className='signup-form'>
             <Form onSubmit={handleRegister}>
                 <h1>Sign up </h1>
-                <input placeholder='Your Name' name='name' type="text" />
+                <input className='box' placeholder='Your Name' name='name' type="text" />
                 <input type="email" placeholder='Email' name="email" id="" className='box' required />
                 <input type="password" placeholder='Password' className='box' name="password" id="" required />
                 <p>Forget Password? </p>

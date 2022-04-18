@@ -24,9 +24,11 @@ const Social = () => {
             </div>
             {errorElement}
             <div className='input-wrapper'>
-                <button onClick={() => signInWithGoogle()} className='google-auth btn btn-info w-50 d-block mx-auto' >
-                    <img src={googleLogo} alt='' />
-                    <p className='px-2'> Continue with Google </p>
+                <button onClick={() => signInWithGoogle()} className='google-auth w-50 d-block mx-auto' >
+                    <div className="google-wrapper">
+                        <img src={googleLogo} alt='' />
+                        <p className='px-2'> Continue with Google </p>
+                    </div>
                 </button>
             </div>
         </div>
