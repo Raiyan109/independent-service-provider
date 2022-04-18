@@ -15,7 +15,7 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>GET STARTED TODAY</h3>
+                    <h3 className='banner-heading1'>GET STARTED TODAY</h3>
                     <p className='banner-heading'>Quran, Aqeedah & Arabic Tution</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -27,7 +27,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Learn Quran Online</h3>
+                    <h3 className='banner-heading1'>Learn Quran Online</h3>
                     <p className='banner-heading'>Anytime & Anywhere</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -39,7 +39,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption >
-                    <h3 >Admission</h3>
+                    <h3 className='banner-heading1'>Admission</h3>
                     <p className='banner-heading'>2022-2023 SCHOOL YEAR</p>
                 </Carousel.Caption>
             </Carousel.Item>
