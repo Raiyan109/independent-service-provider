@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import Header from './Pages/Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
@@ -14,6 +16,12 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Services from './Pages/Home/Services/Services';
 
 function App() {
+
+  // aos initialization
+  Aos.init({
+    duration: 1800,
+    offset: 0,
+  })
   return (
     <div className="App">
       <Header></Header>

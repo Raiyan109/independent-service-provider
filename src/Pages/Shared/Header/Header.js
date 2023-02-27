@@ -38,13 +38,12 @@ const Header = () => {
 
 
                         <Nav>
-                            <Nav.Link as={Link} to="/about">About</Nav.Link>
                             {
                                 user ?
-                                    <button className='btn btn-light  text-decoration-none signout-btn' onClick={handleSignOut}>Sign out </button>
+                                    <button className='login-btn' onClick={handleSignOut}>Sign out </button>
                                     :
-                                    <Nav.Link as={Link} to="/login">
-                                        Login
+                                    <Nav.Link as={Link} to="/login" className='login-btn' style={{ color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                        Join now
                                     </Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>
