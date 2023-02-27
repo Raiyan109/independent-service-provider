@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 400px;
-    height: 550px;
+    height: 540px;
     padding: 20px;
     border-radius: 2%;
     box-shadow: -3px 0px 15px -3px rgba(0, 0, 0, 0.1);
@@ -46,8 +46,6 @@
 }
 
 .login-btn {
-    margin: 0 auto;
-    display: block;
     background: #333;
     color: #fff;
     font-size: 17px;

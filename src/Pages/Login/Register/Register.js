@@ -33,18 +33,21 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password)
     }
     return (
-        <div className='signup-form'>
-            <Form onSubmit={handleRegister}>
-                <h1>Sign up </h1>
-                <input className='box' placeholder='Your Name' name='name' type="text" />
-                <input type="email" placeholder='Email' name="email" id="" className='box' required />
-                <input type="password" placeholder='Password' className='box' name="password" id="" required />
+        <div className='login-container'>
+            <div className='form-box'>
+                <div className="header-form">
+                    <Form onSubmit={handleRegister}>
+                        <h1>Sign up </h1>
+                        <input className='box' placeholder='Your Name' name='name' type="text" />
+                        <input type="email" placeholder='Email' name="email" id="" className='box' required />
+                        <input type="password" placeholder='Password' className='box' name="password" id="" required />
+                        <p>Already have an account? <Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+                        <input type="submit" className='login-btn' value="Sign up" />
+                        <Social></Social>
+                    </Form>
+                </div>
 
-                <p>Already have an account? <Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
-                <input type="submit" className='btn' value="Sign up" />
-                <Social></Social>
-
-            </Form>
+            </div>
         </div>
     );
 };

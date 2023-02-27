@@ -23,14 +23,16 @@ const Social = () => {
                 <div style={{ height: '1px' }} className='bg-primary w-50'></div>
             </div>
             {errorElement}
-            <div className='input-wrapper'>
-                <button onClick={() => signInWithGoogle()} className='google-auth w-50 d-block mx-auto' >
-                    <div className="google-wrapper">
-                        <img src={googleLogo} alt='' />
-                        <p className='px-2'> Continue with Google </p>
+            <button onClick={() => signInWithGoogle()} className='login-btn' style={{ height: '58px', width: '240px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div>
+                        <img style={{ width: '20px' }} src={googleLogo} alt='' />
                     </div>
-                </button>
-            </div>
+                    <div>
+                        <p style={{ fontSize: '15px' }}>Continue with Google </p>
+                    </div>
+                </div>
+            </button>
         </div>
     );
 };
