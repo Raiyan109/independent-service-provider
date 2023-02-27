@@ -1,4 +1,3 @@
-import { async } from '@firebase/util';
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -61,22 +60,24 @@ const Login = () => {
         }
     }
     return (
-        <div className='login-form'>
+        <div className='login-container'>
+            <div className='form-box'>
+                <div className="header-form">
+                    <Form onSubmit={handleSubmit}>
+                        <h1>Login</h1>
 
-            <Form onSubmit={handleSubmit}>
-                <h1>
-                    Login </h1>
-                <input ref={emailRef} type="email" placeholder='Email' name="" id="" className='box' required />
-                <input ref={passwordRef} type="password" placeholder='Password' className='box' name="" id="" required />
-                <p>Forget Password? <button className='btn btn-link' onClick={resetPassword}>Reset Password </button> </p>
-                <p>Don't have an account? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Please Signup</Link> </p>
-                <input type="submit" className='login-btn' value="Login" />
+                        <input ref={emailRef} type="email" placeholder='Email' name="" id="" className='box' required />
+                        <input ref={passwordRef} type="password" placeholder='Password' className='box' name="" id="" required />
+                        <p>Forget Password? <button className='btn btn-link' onClick={resetPassword}>Reset Password </button> </p>
+                        <p>Don't have an account? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Please Signup</Link> </p>
+                        <input type="submit" className='login-btn' value="Login" />
+                        <Social></Social>
+                        <ToastContainer />
+                    </Form>
 
+                </div>
 
-                <Social></Social>
-                <ToastContainer />
-            </Form>
-
+            </div>
         </div>
     );
 };
