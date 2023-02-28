@@ -9,7 +9,7 @@ const Reviews = () => {
             .then(data => setReviews(data))
     }, [])
     return (
-        <div className='container'>
+        <div className='container mb-5'>
             <div className="row">
                 <h1 className='text-center mb-5 mt-5 font'>What my students says about me. </h1>
                 <div className="reviews-container">
