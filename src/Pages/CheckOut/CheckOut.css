@@ -1,0 +1,21 @@
+.checkout-bg {
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    padding: 30px;
+    height: 100vh;
+    text-align: center;
+    line-height: 30px;
+    background-image: linear-gradient(-225deg,
+            #7a5fda 0,
+            #44107a 29%,
+            #e75586 67%,
+            #c9c554 100%);
+    background-size: 500% 500%;
+    animation: change_bg 15s linear infinite;
+}
+
+@keyframes change_bg {
+    50% {
+        background-position: 100% 100%;
+    }
+}
