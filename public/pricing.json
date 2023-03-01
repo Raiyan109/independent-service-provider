@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Lite",
+        "price": "19",
+        "description": "Pay as You Go",
+        "img": "https://i.ibb.co/M7Gb5m6/pexels-timur-weber-9127609.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Basic",
+        "price": "29",
+        "description": "8 hours - Best Value",
+        "img": "https://i.ibb.co/5nY0kv4/pexels-timur-weber-9127603.jpg"
+    },
+    {
+        "id": "3",
+        "name": "PRO",
+        "price": "672",
+        "description": "16 hours - Best Value",
+        "img": "https://i.ibb.co/W6xwGWX/pexels-pok-rie-683833.jpg"
+    }
+]
