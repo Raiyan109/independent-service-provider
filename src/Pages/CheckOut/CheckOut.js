@@ -3,6 +3,8 @@ import './CheckOut.css'
 import BreadcrumbExample from '../BreadCrumb';
 import Pricing from '../Pricing';
 import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+import CheckoutForm from '../CheckoutForm';
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
 console.log(stripePromise);
@@ -21,6 +23,14 @@ const CheckOut = () => {
 
             </div>
             <Pricing />
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ background: 'rgba( 202, 82, 82, 0.3 )', boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )', backdropFilter: 'blur( 8px )', webkitBackdropFilter: 'blur( 8px )', borderRadius: '10px', border: '1px solid rgba( 255, 255, 255, 0.18 )', width: '500px', height: '200px', marginBottom: '20px' }}>
+
+                    <Elements stripe={stripePromise}>
+                        <CheckoutForm />
+                    </Elements>
+                </div>
+            </div>
         </div>
     );
 };

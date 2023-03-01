@@ -10,6 +10,8 @@ const CheckoutForm = () => {
         if (!stripe || !elements) {
             return
         }
+
+        const card = elements.getElement(CardElement)
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -20,7 +22,7 @@ const CheckoutForm = () => {
                             fontSize: '16px',
                             color: '#424770',
                             '::placeholder': {
-                                color: '#aab7c4',
+                                color: '#aab7c4'
                             },
                         },
                         invalid: {
@@ -29,7 +31,7 @@ const CheckoutForm = () => {
                     },
                 }}
             />
-            <button type="submit" disabled={!stripe}>
+            <button style={{ border: 'none', color: '#fff', background: 'rgba( 255,101,48,0.59)', padding: '10px', borderRadius: '6px', position: 'absolute', bottom: '6px', left: '200px', width: '100px' }} type="submit" disabled={!stripe}>
                 Pay
             </button>
         </form>

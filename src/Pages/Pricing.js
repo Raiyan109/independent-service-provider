@@ -12,7 +12,7 @@ const Pricing = () => {
     return (
         <div className='container'>
             <div className="row">
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px', marginBottom: '30px' }}>
                     {
                         prices.map((price) => (
                             <PricingDetail
