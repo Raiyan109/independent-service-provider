@@ -42,6 +42,18 @@ const CheckoutForm = () => {
         else {
             setCardError('')
         }
+
+        const { paymentIntent, error: confirmError } = await stripe.confirmCardPayment(
+            clientSecret,
+            {
+                payment_method: {
+                    card: card,
+                    billing_details: {
+                        name: 'Jenny Rosen',
+                    },
+                },
+            },
+        );
     }
     return (
         <>
