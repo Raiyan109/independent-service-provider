@@ -19,7 +19,6 @@ provider built on top of <a href="https://reactjs.org/" target="_blank">React</a
   - Google Auth
 * React Firebase Hooks  
 * Stripe Payment Gateway
-* [KaTeX](https://khan.github.io/KaTeX/) Support
 * React Bootstrap
 * React Toastify
 * AOS Animation
