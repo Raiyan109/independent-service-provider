@@ -3,7 +3,9 @@ import aboutImg from '../Images/rkk-about.jpg'
 const AboutHero = () => {
     return (
         <>
-            <div className="container" style={{ padding: '50px', height: '600px', fontFamily: "'Merriweather', serif", marginTop: '80px', lineHeight: '28px', marginBottom: '100px' }}>
+            <div className="container" style={{ padding: '50px', height: '600px', fontFamily: "'Merriweather', serif", marginTop: '80px', lineHeight: '28px', marginBottom: '100px' }}
+                id='#about'
+            >
                 <div className="row">
                     <div className="col-md-6">
                         <h2

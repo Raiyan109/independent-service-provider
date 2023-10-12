@@ -5,6 +5,8 @@ import Banner from '../Banner/Banner';
 import Reviews from '../Reviews/Reviews';
 import Services from '../Services/Services';
 import './Home.css'
+import Faq from '../../Faq/Faq';
+import CTA from '../../CTA/CTA';
 const Home = () => {
     return (
         <div>
@@ -14,7 +16,8 @@ const Home = () => {
             <Services></Services>
             <TeachWithRkk />
             <Reviews></Reviews>
-
+            <Faq />
+            <CTA />
         </div>
     );
 };
