@@ -11,6 +11,7 @@ import Teachers from '../Teachers/Teachers';
 import GetInTouch from '../GetInTouch/GetInTouch';
 import Hero2 from '../Hero2/Hero2';
 import Hero3 from '../Hero3/Hero3';
+import HowToApply from '../HowToApply/HowToApply';
 const Home = () => {
     return (
         <div>
@@ -22,6 +23,7 @@ const Home = () => {
             <Teachers />
             <Hero2 />
             <Hero3 />
+            {/* <HowToApply /> */}
             <Reviews></Reviews>
             <CTA />
             <Faq />
