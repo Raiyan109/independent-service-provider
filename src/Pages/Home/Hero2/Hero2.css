@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+/* body * {
+    word-wrap: break-word;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+} */
+
+.hero2-container {
+    padding: 80px 30px;
+}
+
+.content-block.hero {
+    color: #fff;
+    padding-top: 1.5em;
+}
+
+.content-block.with-overflow {
+    padding: 0 2.2em;
+    padding-top: 0px;
+    margin-bottom: 5em;
+}
+
+.content-block {
+    width: 100%;
+    background: #edede9;
+    padding: 2.2em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.content-block.with-overflow::before {
+    content: '';
+    display: block;
+    /* background: #221f1f; */
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    top: 0;
+    left: 0;
+}
+
+.content-block.hero.tri-split .content-wrapper {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    justify-content: center;
+    /* background: #221f1f; */
+}
+
+.content-block.hero .content-wrapper {
+    max-width: 1150px;
+}
+
+.content-block .content-wrapper {
+    width: 100%;
+    max-width: 1080px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-block .content-wrapper::before,
+.content-block .content-wrapper::after {
+    display: table;
+    content: ' ';
+}
+
+.content-block.hero.tri-split .header-img:not(:last-child) {
+    border-right: 1px solid #211e1e;
+}
+
+.content-block.hero.tri-split .header-img {
+    display: block;
+    width: 33.3333%;
+    max-width: 33.3333%;
+    height: 540px;
+    text-decoration: none;
+    flex: 1 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 200ms linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    cursor: pointer;
+}
+
+.soft-fade.ready {
+    animation: fadeIn ease-in-out 1;
+    animation-duration: 0s;
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+    opacity: 1;
+    filter: none;
+}
+
+.soft-fade {
+    background-color: #242222;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.story-headline {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-align: center;
+    flex-align: center;
+    align-items: center;
+    padding: 2.2em;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 55%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.story-headline h3 {
+    align-self: flex-end;
+    text-align: left;
+    line-height: 1.15;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    max-width: 100%;
+}
+
+.content-block.hero.tri-split .header-img::after {
+    content: '';
+    height: 10px;
+    width: 100%;
+    background: #e50914;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: all 200ms linear;
+}
+
+.content-block.hero.tri-split .header-img {
+    cursor: pointer;
+}
+
+.no-touchevents .content-block.hero.tri-split .header-img:hover:after {
+    bottom: 0;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    bottom: -46px;
+    left: 0;
+    background-image: radial-gradient(closest-side, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+    background-position: 0% -25px;
+    background-repeat: no-repeat;
+    height: 46px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.content-block .content-wrapper::after {
+    clear: both;
+}
+
+@media screen and (max-width: 767px) {
+    .content-block.with-overflow {
+        padding: 0;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-block.hero.tri-split .header-img {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-block.hero.tri-split {
+        display: none;
+    }
+}

@@ -7,6 +7,10 @@ import Services from '../Services/Services';
 import './Home.css'
 import Faq from '../../Faq/Faq';
 import CTA from '../../CTA/CTA';
+import Teachers from '../Teachers/Teachers';
+import GetInTouch from '../GetInTouch/GetInTouch';
+import Hero2 from '../Hero2/Hero2';
+import Hero3 from '../Hero3/Hero3';
 const Home = () => {
     return (
         <div>
@@ -15,9 +19,13 @@ const Home = () => {
             <AboutHero />
             <Services></Services>
             <TeachWithRkk />
+            <Teachers />
+            <Hero2 />
+            <Hero3 />
             <Reviews></Reviews>
-            <Faq />
             <CTA />
+            <Faq />
+            <GetInTouch />
         </div>
     );
 };
