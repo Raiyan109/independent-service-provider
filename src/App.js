@@ -14,6 +14,8 @@ import RequiredAuth from './Pages/Login/RequiredAuth/RequiredAuth';
 import Blogs from './Pages/Blogs/Blogs';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Services from './Pages/Home/Services/Services';
+import { ToastContainer } from 'react-bootstrap';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
   })
   return (
     <div className="App">
+      <Toaster />
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -41,6 +44,10 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      {/* <ToastContainer
+        position="top-left"
+        autoClose={1000}
+      /> */}
     </div>
   );
 }

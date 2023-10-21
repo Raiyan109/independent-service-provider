@@ -7,6 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
 import { useAuth } from '../../../context/AuthContext';
+import DropdownMenu from '../../DropdownMenu/DropdownMenu';
 const Header = () => {
     const { rkkAuth, setRkkAuth } = useAuth()
     const navigate = useNavigate()
@@ -35,6 +36,7 @@ const Header = () => {
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#services">Services</Nav.Link>
                             <Nav.Link href="#about">About us</Nav.Link>
+                            <DropdownMenu />
                             {/* <Nav.Link href="/pricing">Pricing</Nav.Link> */}
                             {/* <Nav.Link as={Link} to="/blogs">Blogs </Nav.Link> */}
                             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
