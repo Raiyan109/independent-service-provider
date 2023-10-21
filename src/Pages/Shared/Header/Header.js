@@ -2,15 +2,25 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Header.css'
 import logo from '../../../Images/download.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
+import { useAuth } from '../../../context/AuthContext';
 const Header = () => {
-    const [user] = useAuthState(auth)
+    const { rkkAuth, setRkkAuth } = useAuth()
+    const navigate = useNavigate()
 
     const handleSignOut = () => {
-        signOut(auth)
+        // signOut(auth);
+        setRkkAuth({
+            ...rkkAuth,
+            user: null,
+            token: ''
+        })
+        localStorage.removeItem('userId')
+        localStorage.removeItem('rkkAuth')
+        navigate('/login')
     }
     return (
         <>
@@ -39,7 +49,7 @@ const Header = () => {
 
                         <Nav>
                             {
-                                user ?
+                                rkkAuth.user ?
                                     <button className='login-btn' onClick={handleSignOut}>Sign out </button>
                                     :
                                     <Nav.Link as={Link} to="/login" className='login-btn' style={{ color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
