@@ -34,7 +34,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#services">Services</Nav.Link>
+                            <Nav.Link href="/courses">Courses</Nav.Link>
                             <Nav.Link href="#about">About us</Nav.Link>
                             {rkkAuth?.user ? <DropdownMenu /> : null}
                             {/* <Nav.Link href="/pricing">Pricing</Nav.Link> */}

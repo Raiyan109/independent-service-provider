@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -18,6 +18,7 @@ import { ToastContainer } from 'react-bootstrap';
 import { Toaster } from 'react-hot-toast';
 import UserProfile from './Pages/UserDetails/UserProfile';
 import AdminProfile from './Pages/UserDetails/AdminProfile';
+import Courses from './Pages/Courses/Courses';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           </RequiredAuth>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/courses' element={<Courses />}></Route>
         <Route path='/userProfile' element={<UserProfile />}></Route>
         <Route path='/adminProfile' element={<AdminProfile />}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
