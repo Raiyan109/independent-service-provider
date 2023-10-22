@@ -44,7 +44,7 @@
     display: none;
 }
 
-.card {
+/* .card {
     scroll-snap-align: start;
     border-radius: 30px;
     min-height: 200px;
@@ -60,4 +60,4 @@
 
 .card:nth-child(even) {
     background: linear-gradient(-220deg, green, yellow);
-}
+} */

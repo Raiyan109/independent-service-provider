@@ -36,7 +36,7 @@ const Header = () => {
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#services">Services</Nav.Link>
                             <Nav.Link href="#about">About us</Nav.Link>
-                            <DropdownMenu />
+                            {rkkAuth?.user ? <DropdownMenu /> : null}
                             {/* <Nav.Link href="/pricing">Pricing</Nav.Link> */}
                             {/* <Nav.Link as={Link} to="/blogs">Blogs </Nav.Link> */}
                             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">

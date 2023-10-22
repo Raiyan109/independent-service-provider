@@ -16,6 +16,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Services from './Pages/Home/Services/Services';
 import { ToastContainer } from 'react-bootstrap';
 import { Toaster } from 'react-hot-toast';
+import UserProfile from './Pages/UserDetails/UserProfile';
+import AdminProfile from './Pages/UserDetails/AdminProfile';
 
 function App() {
 
@@ -41,6 +43,8 @@ function App() {
           </RequiredAuth>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/userProfile' element={<UserProfile />}></Route>
+        <Route path='/adminProfile' element={<AdminProfile />}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
