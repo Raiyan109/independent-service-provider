@@ -1,0 +1,31 @@
+.courses-container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+
+.courses-upside {}
+
+.in-progress {}
+
+.completed {}
+
+.courses-card-container {}
+
+.courses-card {}
+
+.courses-img {}
+
+.courses-intro {}
+
+.courses-chapters {}
+
+.courses-progress {}

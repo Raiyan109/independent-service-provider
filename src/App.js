@@ -19,6 +19,8 @@ import { Toaster } from 'react-hot-toast';
 import UserProfile from './Pages/UserDetails/UserProfile';
 import AdminProfile from './Pages/UserDetails/AdminProfile';
 import Courses from './Pages/Courses/Courses';
+import UpperNav from './Pages/UpperNav/UpperNav';
+import FindOutMore from './Pages/Home/FindOutMore/FindOutMore';
 
 function App() {
 
@@ -30,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <Toaster />
+      <UpperNav />
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -45,6 +48,7 @@ function App() {
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/courses' element={<Courses />}></Route>
+        <Route path='/findMore' element={<FindOutMore />}></Route>
         <Route path='/userProfile' element={<UserProfile />}></Route>
         <Route path='/adminProfile' element={<AdminProfile />}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
