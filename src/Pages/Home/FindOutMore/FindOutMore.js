@@ -2,6 +2,7 @@ import React from 'react';
 import './FindOutMore.css'
 import aboutImg from '../../../Images/madrasa-student-reading-removebg-preview.png'
 import BenifitsOfUnlimited from '../../BenifitsOfUnlimited/BenifitsOfUnlimited';
+import { Link } from 'react-router-dom';
 
 const FindOutMore = () => {
     return (
@@ -32,7 +33,9 @@ const FindOutMore = () => {
                             style={{ backgroundColor: '#333', color: '#ffff', padding: '10px', border: 'none', borderRadius: '3px' }}
                             data-aos="fade-down"
                             data-aos-delay='600'
-                        >Subscribe to Unlimited</button>
+                        >
+                            <Link className='text-decoration-none text-white' to='/register'>Subscribe to Unlimited</Link>
+                        </button>
                         <p style={{ marginTop: '20px' }}><small
                             data-aos="fade-down"
                             data-aos-delay='600'
