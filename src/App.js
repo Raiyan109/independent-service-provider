@@ -21,6 +21,7 @@ import AdminProfile from './Pages/UserDetails/AdminProfile';
 import Courses from './Pages/Courses/Courses';
 import UpperNav from './Pages/UpperNav/UpperNav';
 import FindOutMore from './Pages/Home/FindOutMore/FindOutMore';
+import Course from './Pages/Course/Course';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/course/:id' element={<Course />}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/checkout' element={
           <RequiredAuth>

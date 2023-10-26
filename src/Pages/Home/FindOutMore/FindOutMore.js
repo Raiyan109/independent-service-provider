@@ -12,17 +12,17 @@ const FindOutMore = () => {
             >
                 <div className="row">
                     <div className="col-md-6">
-                        <h5
+                        <p
                             style={{ marginBottom: '19px' }} data-aos="fade-down"
                             data-aos-delay='400'
-                        >Unlimited subscription</h5>
+                        >Unlimited subscription</p>
                         <h2
-                            style={{ marginBottom: '19px' }} data-aos="fade-down"
+                            style={{ marginBottom: '19px', color: '#000' }} data-aos="fade-down"
                             data-aos-delay='400'
                         >Get 30% off Unlimited learning. Knowledge Wins.</h2>
                         <p
                             data-aos="fade-down"
-                            data-aos-delay='600'
+                            data-aos-delay='600' style={{ color: '#333' }}
                         >Invest in your future with Unlimited access to 1000+ online courses from top universities. Where will your knowledge take you?</p>
                         <h4 style={{ marginBottom: '19px' }}
                             data-aos="fade-down"
@@ -36,7 +36,7 @@ const FindOutMore = () => {
                         >
                             <Link className='text-decoration-none text-white' to='/register'>Subscribe to Unlimited</Link>
                         </button>
-                        <p style={{ marginTop: '20px' }}><small
+                        <p style={{ marginTop: '20px', color: '#333' }}><small
                             data-aos="fade-down"
                             data-aos-delay='600'
                         >Automatically renews. Cancel anytime. View <span><a href="">T&Cs</a></span> here.</small></p>
